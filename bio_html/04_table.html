@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 만들기</title>
+    <!-- CSS사용법 3가지 : inline, style, file-->
+    <style>
+        .bluetext{ /* class 이름으로 사용 */
+            font-size : 50px;
+            color : orange;
+        }
+        #usda{ /* #이 붙으면 id에 적용 */
+            font-size : 30px;
+            color : green;
+        }
+        table, th, td { /* tag이름에 적용 */
+            border : 1px solid #ccc;
+        }
+        td {
+            padding : 5px  ; /*셀 테두리와 내용 사이의 간격(패딩) */
+        }
+    </style>
+</head>
+<body>
+    <h1>>블루베리에 관한 연구</h1> 
+    <h2 class = "bluetext">블루베리와 황산화 효능</h2> 
+    <p class = "bluetext">블루베리는 항산화제</p>
+    <h2>블루베리와 노화</h2>
+    <p id = "usda"> USDA 인류 영양 연구센터</p>
+
+    <table border = "1">
+        <colgroup> <!-- 열별작업 colgroup-->
+        <col>
+        <col span = "1" style = "background-color : skyblue;"> <!-- 인라인 css, colgroup은 열별작업이다-->
+        <col style = "background-color: yellow;"
+        </colgroup>
+    <tr>
+        <th> 제목 1열</th>
+        <th> 제목 2열</th>
+        <th> 제목 3열</th>
+    </tr>
+    <tr>
+        <td> 제목 1 </td>
+        <td> 1행 2열 </td>
+        <td> 1행 3열 </td>
+    </tr>
+    <tr> 
+        <td> 제목 2 </td>
+        <td> 2행 2열 </td>
+        <td> 2행 3열 </td>
+    </tr>
+    </table>
+    
+</body></html>
